@@ -29,14 +29,7 @@ aria-valuenow="50" и выведите его в консоль. -->
 
 <script>
 "use strict";
-/*
-запутался совсем думал что можно сделать так:
-let oneEl = document.querySelectorAll(".progress-bar");
-let two = oneEl.querySelector(".aria-valuenow", "50");
-не получилось, сделал по другому, результат дает, но в задании было через просто селектор без ALL
-*/
-
-let oneEl = document.querySelectorAll(".progress-bar");
+let oneEl = document.querySelector('[aria-valuenow="50"]');
 console.log(oneEl[2]);
 </script>
 </body>

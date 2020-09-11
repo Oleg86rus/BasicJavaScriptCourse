@@ -10,7 +10,7 @@
 
 <!--
 Задание.
-1. Сохраните в переменную тег div.
+2 level. Сохраните в переменную тег div.
 2. Создайте переменную classes, и в нее сохраните значение свойства classList.
 3. C помощью forEach переберите classes и выведите каждый класс в консоль.
  -->
@@ -19,8 +19,9 @@
 "use strict";
 let divEl = document.querySelector('div');
 let classes = divEl.classList;
-for (let i = 0; i < classes.length; i++)
-    console.log(classes[i]);
+classes.forEach(element =>{
+  console.log(element);
+})
 </script>
 </body>
 </html>

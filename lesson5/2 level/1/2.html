@@ -11,7 +11,7 @@
 <p class="one">параграф</p>
 
 <!-- Задание.
-1. Сохраните в переменную коллекцию элементов с классом one. Для получения
+2 level. Сохраните в переменную коллекцию элементов с классом one. Для получения
 элементов используйте метод. getElementsByClassName()
 2. С помощью цикла переберите эту коллекцию и выведите в консоль название тега.
 -->
@@ -19,8 +19,9 @@
 <script>
 "use strict";
 let h3El = document.getElementsByClassName('one');
-for (let i = 0; i < h3El.length; i++)
+for (let i = 0; i < h3El.length; i++) {
     console.log(h3El[i].tagName);
+}
 </script>
 </body>
 </html>
