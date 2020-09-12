@@ -41,7 +41,13 @@
     -->
 
     <script>
-        
+        'use strict';
+        let oneEl = document.querySelectorAll('img');
+        function replace (){
+            for (let i = 0; i < oneEl.length; i++){
+                oneEl[i].setAttribute('src', `images/${i + 1}.jpg`)
+            }
+        }
+        window.setTimeout(replace, 3000);
     </script>
 </body>
-</html>
