@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 function Post(author, text, date){
     this.author = author;
     this.text = text;

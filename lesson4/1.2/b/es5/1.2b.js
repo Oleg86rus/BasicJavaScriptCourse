@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 function Post(author, text, date){
     this.author = author;
     this.text = text;
@@ -13,7 +13,7 @@ post1.edit("lorem lorem lorem");
 console.log(post1);
 
 function AttachedPost(author, text, date){
-    Post.call(this, author, text, date)
+    Post.call(this, author, text, date);
     this.highlighted = false;
 }
 AttachedPost.prototype = Object.create(Post.prototype);
