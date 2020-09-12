@@ -13,7 +13,7 @@
 
 <!--
 Задание.
-1. Получите все теги b.
+2 level. Получите все теги b.
 2. С помощью метода contains() из classList, проверьте, есть ли у тега
 класс sign, и если нет, то тогда добавьте с помощью метода add()
 -->
@@ -22,7 +22,7 @@
 "use strict";
 let bEl = document.querySelectorAll('b');
 bEl.forEach(element =>{
-    if (!element.classList.contains('sign') === true){
+    if (!element.classList.contains('sign')){
         element.classList.add('sign');
     }
 })

@@ -12,7 +12,7 @@
 
 <!--
 Задание.
-1. Сохраните в переменную коллекцию с тегами h2, используйте метод getElementsByTagName()
+2 level. Сохраните в переменную коллекцию с тегами h2, используйте метод getElementsByTagName()
 2. Пробегитесь по этой коллекции с помощью цикла и выведите в консоль значение
 атрибута class, используя свойство className.
 -->
@@ -20,8 +20,9 @@
 <script>
 "use strict";
 let h2El = document.getElementsByTagName("h2");
-for (let i = 0; i < h2El.length; i++)
+for (let i = 0; i < h2El.length; i++){
     console.log(h2El[i].className);
+}
 </script>
 </body>
 </html>

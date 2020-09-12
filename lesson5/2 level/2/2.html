@@ -12,7 +12,7 @@
 
 <!--
 Задание.
-1. Назначьте обработку клика по параграфу, у функции обработчика объявите
+2 level. Назначьте обработку клика по параграфу, у функции обработчика объявите
 парамет event.
 2. При клике выведите в консоль event.classList
 3. Переберите с помощью forEach event.classList и выведите каждый класс
@@ -23,6 +23,9 @@
     let pEl = document.querySelector('p');
     pEl.addEventListener('click', function (event){
         console.log(event.target.classList);
+        event.target.classList.forEach(function (classEl) {
+        console.log(classEl);
+        })
     })
 
 </script>

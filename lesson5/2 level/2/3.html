@@ -10,12 +10,12 @@
      id="exampleModal"
      tabindex="-1"
      aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
+     aria-hidden="true">1
 </div>
 
 <!--
 Задание.
-1. Сохраните ссылку на div в переменную
+2 level. Сохраните ссылку на div в переменную
 2. Назначьте div'у обработку клика, у функции-обработчика объявите параметр event.
 3. При клике из event.target c помощью getAttribute() получите значение
 каждого атрибута и выведите в консоль.
@@ -23,7 +23,14 @@
 <script>
     "use strict";
     let divEl = document.querySelector('div');
-
+    divEl.addEventListener('click', function (event) {
+        event.target.getAttribute('class');
+        event.target.getAttribute('id');
+        event.target.getAttribute('tabindex');
+        event.target.getAttribute('aria-labelledby');
+        event.target.getAttribute('aria-hidden');
+        console.log(event);
+    })
 </script>
 </body>
 </html>

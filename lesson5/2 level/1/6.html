@@ -20,16 +20,16 @@
 </div>
 
 <!-- Задание.
-1. Найдите все "карточки" с классом .card.
+2 level. Найдите все "карточки" с классом .card.
 2. Проверьте есть ли у карточки класс hidden с помощью метода contains(),
 и если есть, то удалите с помощью метода remove(). -->
 <script>
     "use strict";
     let cardEl = document.querySelectorAll('.card');
     cardEl.forEach(element =>{
-        if (element.classList.contains('hidden') === true) {
+        if (element.classList.contains('hidden')) {
             element.classList.remove('hidden');
-        };
+        }
     });
 </script>
 </body>
